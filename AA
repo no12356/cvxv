@@ -1,0 +1,24 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "ScriptX made by Juan1522", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Any",
+	Icon = "rbxassetid://9180622670",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Scripthub",
+	Callback = function()
+      		print("button pressed") loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Eggden.cc",
+	Callback = function()
+      		print("button pressed") loadstring(game:HttpGet('https://raw.githubusercontent.com/no12356/g4ndec/main/AIMFB'))()
+  	end    
+})
+
+OrionLib:Init()
